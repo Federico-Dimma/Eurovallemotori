@@ -1,0 +1,13 @@
+{
+  "name": "eurovallemotori",
+  "version": "1.0.0",
+  "description": "Eurovallemotori Dashboard - Beta",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server public -p 8080",
+    "deploy": "node deploy-amplify.js"
+  },
+  "keywords": ["eurovallemotori", "dashboard"],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storico - Eurovallemotori</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <h2>Eurovallemotori</h2>
+            </div>
+            <nav class="menu">
+                <a href="index.html" class="menu-item">
+                    <span class="icon">📊</span>
+                    <span>Calcolo</span>
+                </a>
+                <a href="database.html" class="menu-item">
+                    <span class="icon">🗄️</span>
+                    <span>Database</span>
+                </a>
+                <a href="storico.html" class="menu-item active">
+                    <span class="icon">📜</span>
+                    <span>Storico</span>
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="header">
+                <h1>Storico</h1>
+                <div class="version">beta 1.0.0</div>
+            </header>
+
+            <div class="content">
+                <div class="page-title">
+                    <h2>Storico Attività</h2>
+                    <p>Visualizza lo storico delle operazioni</p>
+                </div>
+
+                <div class="filter-bar">
+                    <select class="filter-select">
+                        <option>Tutte le attività</option>
+                        <option>Calcoli</option>
+                        <option>Database</option>
+                        <option>Modifiche</option>
+                    </select>
+                    <input type="date" class="date-input" value="2026-02-05">
+                    <button class="btn-primary">Filtra</button>
+                    <button class="btn-secondary">Esporta</button>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">05/02/2026 14:30</div>
+                        <div class="timeline-content">
+                            <h4>Calcolo Completato</h4>
+                            <p>Calcolo ID: 002 completato con successo</p>
+                            <span class="timeline-badge calcolo">Calcolo</span>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">05/02/2026 11:15</div>
+                        <div class="timeline-content">
+                            <h4>Nuovo Record Database</h4>
+                            <p>Aggiunto record DB-003: Ricambio Z3</p>
+                            <span class="timeline-badge database">Database</span>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">04/02/2026 16:45</div>
+                        <div class="timeline-content">
+                            <h4>Modifica Record</h4>
+                            <p>Modificato record DB-002: Componente Y2</p>
+                            <span class="timeline-badge modifica">Modifica</span>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">04/02/2026 10:20</div>
+                        <div class="timeline-content">
+                            <h4>Calcolo Completato</h4>
+                            <p>Calcolo ID: 001 completato con successo</p>
+                            <span class="timeline-badge calcolo">Calcolo</span>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">03/02/2026 14:00</div>
+                        <div class="timeline-content">
+                            <h4>Nuovo Record Database</h4>
+                            <p>Aggiunto record DB-002: Componente Y2</p>
+                            <span class="timeline-badge database">Database</span>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">01/02/2026 09:30</div>
+                        <div class="timeline-content">
+                            <h4>Primo Record Database</h4>
+                            <p>Aggiunto record DB-001: Motore X1</p>
+                            <span class="timeline-badge database">Database</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database - Eurovallemotori</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <h2>Eurovallemotori</h2>
+            </div>
+            <nav class="menu">
+                <a href="index.html" class="menu-item">
+                    <span class="icon">📊</span>
+                    <span>Calcolo</span>
+                </a>
+                <a href="database.html" class="menu-item active">
+                    <span class="icon">🗄️</span>
+                    <span>Database</span>
+                </a>
+                <a href="storico.html" class="menu-item">
+                    <span class="icon">📜</span>
+                    <span>Storico</span>
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="header">
+                <h1>Database</h1>
+                <div class="version">beta 1.0.0</div>
+            </header>
+
+            <div class="content">
+                <div class="page-title">
+                    <h2>Gestione Database</h2>
+                    <p>Gestisci i dati di Eurovallemotori</p>
+                </div>
+
+                <div class="search-bar">
+                    <input type="text" placeholder="Cerca nel database..." class="search-input">
+                    <button class="btn-primary">Cerca</button>
+                    <button class="btn-secondary">Nuovo Record</button>
+                </div>
+
+                <div class="database-stats">
+                    <div class="stat-card">
+                        <h4>Totale Record</h4>
+                        <p class="stat-number">1,234</p>
+                    </div>
+                    <div class="stat-card">
+                        <h4>Aggiunti Oggi</h4>
+                        <p class="stat-number">12</p>
+                    </div>
+                    <div class="stat-card">
+                        <h4>Modificati</h4>
+                        <p class="stat-number">5</p>
+                    </div>
+                </div>
+
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Nome</th>
+                                <th>Categoria</th>
+                                <th>Data Creazione</th>
+                                <th>Stato</th>
+                                <th>Azioni</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>DB-001</td>
+                                <td>Motore X1</td>
+                                <td>Motori</td>
+                                <td>01/02/2026</td>
+                                <td><span class="status-badge success">Attivo</span></td>
+                                <td>
+                                    <button class="btn-small">Modifica</button>
+                                    <button class="btn-small">Elimina</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>DB-002</td>
+                                <td>Componente Y2</td>
+                                <td>Componenti</td>
+                                <td>03/02/2026</td>
+                                <td><span class="status-badge success">Attivo</span></td>
+                                <td>
+                                    <button class="btn-small">Modifica</button>
+                                    <button class="btn-small">Elimina</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>DB-003</td>
+                                <td>Ricambio Z3</td>
+                                <td>Ricambi</td>
+                                <td>05/02/2026</td>
+                                <td><span class="status-badge warning">Revisione</span></td>
+                                <td>
+                                    <button class="btn-small">Modifica</button>
+                                    <button class="btn-small">Elimina</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "applications": [
+    {
+      "appRoot": "public",
+      "frontend": {
+        "phases": {
+          "build": {
+            "commands": []
+          }
+        },
+        "artifacts": {
+          "baseDirectory": "/",
+          "files": [
+            "**/*"
+          ]
+        }
+      }
+    }
+  ]
+}
